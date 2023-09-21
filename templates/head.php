@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../../Notes-website/Styles/master.css">
+    <link rel="stylesheet" href="../../Notes-website/styles/master.css">
     <!-- Styles -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

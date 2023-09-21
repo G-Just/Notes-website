@@ -6,8 +6,8 @@ include "templates/head.php";
 include "templates/navbar.php";
 include "includes/functions_h.php";
 include "includes/dbhandler_h.php";
-$data = getAllFolders($conn);
-function CreateFolder($title, $description)
+$folderData = getAllFolders($conn);
+function createFolderComponent($title, $description)
 {
     echo
     "<div class='folder'>
@@ -19,13 +19,10 @@ function CreateFolder($title, $description)
 
 <body>
     <div id='folder-grid'>
-        <?php foreach ($data as $folder) {
-            CreateFolder($folder['folderTitle'], $folder['folderDescription']);
+        <?php foreach ($folderData as $folder) {
+            createFolderComponent($folder['folderTitle'], $folder['folderDescription']);
         } ?>
     </div>
-
-
-
 </body>
 
 </html>
