@@ -1,0 +1,21 @@
+Opens into ->
+    -Add folders button
+    -Folders
+    Folders contain ->
+        Outside:
+        -Add note page button
+        -Delete button
+            Inside:
+                -Notes pages
+                Notes pages have ->
+                Outside:
+                -ID of the note pages
+                -Title of the note page
+                -Description
+                -Delete button
+                    Inside:
+                        -Displays title (can change)
+                        -Add section button
+                        -Sections 
+                        Sections have -> 
+                            -user defined/structured text
