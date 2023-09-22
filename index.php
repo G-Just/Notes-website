@@ -7,10 +7,10 @@ include "templates/navbar.php";
 include "includes/functions_h.php";
 include "includes/dbhandler_h.php";
 $folderData = getAllFolders($conn);
-function createFolderComponent($title, $description)
+function createFolderComponent($id, $title, $description)
 {
     echo
-    "<div class='folder'>
+    "<div class='folder' onclick='selectFolder($id)'>
         <h1 id='folder-title'>$title</h1>
         <p id='folder-description'>$description...</p>
     </div>";
@@ -20,9 +20,11 @@ function createFolderComponent($title, $description)
 <body>
     <div id='folder-grid'>
         <?php foreach ($folderData as $folder) {
-            createFolderComponent($folder['folderTitle'], $folder['folderDescription']);
+            createFolderComponent($folder['folderID'], $folder['folderTitle'], $folder['folderDescription']);
         } ?>
     </div>
 </body>
+
+<script src="./scripts/script.js"></script>
 
 </html>
