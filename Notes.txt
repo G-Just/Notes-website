@@ -3,9 +3,9 @@ Opens into ->
     -Folders
     Folders contain ->
         Outside:
-        -Add note page button
         -Delete button
             Inside:
+                -Add note page button
                 -Notes pages
                 Notes pages have ->
                 Outside:
